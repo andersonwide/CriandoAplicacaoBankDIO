@@ -8,6 +8,17 @@ namespace CriandoAplicacaoBankDIO
 {
     public class Conta
     {
-        public string Nome { get; set; };
+        private string nome { get; set; };
+        private TipoConta TipoConta { get; set; };
+        private double saldo { get; set; };
+        private double Credito { get; set; };
+
+        public Conta(TipoConta TipoConta, double saldo, double credito, string nome,);
+        {
+            this.TipoConta = TipoConta;
+            this.saldo = saldo;
+            this.credito = credito;
+            this.nome = nome;
+        }
     }
 }
